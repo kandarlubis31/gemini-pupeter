@@ -10,10 +10,10 @@ concurrent prompts.
 ## How it works
 
 1. On the first request the server launches Chrome with a persistent `userDataDir`
-   (`./gemini_session` by default).
+ (`./gemini_session` by default).
 2. If that profile is not signed in, the browser is opened visibly so you can log in.
 3. Prompts are queued; each one is typed into the Gemini composer and the answer is
-   captured from the response stream.
+ captured from the response stream.
 4. The reply is returned to the caller.
 
 ## Requirements
@@ -48,9 +48,17 @@ This automates the **consumer Gemini web app**, not an official API. That means:
 - it can break whenever Google changes the page markup;
 - it is subject to Google's terms of service, so use your own account and keep volume low;
 - the `gemini_session` directory holds your login cookies — keep it out of version control
-  and never share it.
+ and never share it.
 
 If you need reliability, use the official Gemini API instead.
+
+---
+
+## Bahasa Indonesia
+
+**gemini-pupeter** menyediakan API HTTP lokal di depan antarmuka web Gemini, digerakkan oleh Puppeteer. Profil browser disimpan permanen, jadi cukup masuk sekali dan sesi itu dipakai ulang oleh pemanggilan berikutnya.
+
+---
 
 ## License
 
