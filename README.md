@@ -52,6 +52,14 @@ This automates the **consumer Gemini web app**, not an official API. That means:
 
 If you need reliability, use the official Gemini API instead.
 
+---
+
+## Bahasa Indonesia
+
+**gemini-pupeter** menyediakan API HTTP lokal di depan antarmuka web Gemini, digerakkan oleh Puppeteer. Profil browser disimpan permanen, jadi cukup masuk sekali dan sesi itu dipakai ulang oleh pemanggilan berikutnya.
+
+---
+
 ## License
 
 MIT
